@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SELF\\Microservices\\Ecommerce\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Courses\\Microservices\\e-commerce-microservices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDE76C1C-18FB-400C-8626-9FA1D064421D}|services\\catalog\\Catalog.API\\Catalog.API.csproj|d:\\courses\\microservices\\e-commerce-microservices\\services\\catalog\\catalog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDE76C1C-18FB-400C-8626-9FA1D064421D}|services\\catalog\\Catalog.API\\Catalog.API.csproj|solutionrelative:services\\catalog\\catalog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDE76C1C-18FB-400C-8626-9FA1D064421D}|services\\catalog\\Catalog.API\\Catalog.API.csproj|d:\\courses\\microservices\\e-commerce-microservices\\services\\catalog\\catalog.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CDE76C1C-18FB-400C-8626-9FA1D064421D}|services\\catalog\\Catalog.API\\Catalog.API.csproj|solutionrelative:services\\catalog\\catalog.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 14,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -66,6 +71,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Courses\\Microservices\\e-commerce-microservices\\services\\catalog\\Catalog.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "services\\catalog\\Catalog.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Courses\\Microservices\\e-commerce-microservices\\services\\catalog\\Catalog.API\\Properties\\launchSettings.json*",
+              "RelativeToolTip": "services\\catalog\\Catalog.API\\Properties\\launchSettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-19T15:24:27.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Courses\\Microservices\\e-commerce-microservices\\services\\catalog\\Catalog.API\\Program.cs",
+              "RelativeDocumentMoniker": "services\\catalog\\Catalog.API\\Program.cs",
+              "ToolTip": "D:\\Courses\\Microservices\\e-commerce-microservices\\services\\catalog\\Catalog.API\\Program.cs*",
+              "RelativeToolTip": "services\\catalog\\Catalog.API\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T15:22:03.703Z",
+              "EditorCaption": ""
             }
           ]
         }
