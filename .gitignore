@@ -15,8 +15,9 @@ $RECYCLE.BIN/
 # Visual Studio local files
 .vs/
 *.suo
-**/DocumentLayout.json
-**/DocumentLayout.backup.json
+*.user
+*.userosscache
+*.sln.docstates
 
 .vs/
 .vscode/*
