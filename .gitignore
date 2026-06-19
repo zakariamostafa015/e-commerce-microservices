@@ -1,0 +1,350 @@
+```gitignore
+# =========================================================
+# OS Files
+# =========================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# =========================================================
+# IDEs / Editors
+# =========================================================
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Rider
+.idea/
+*.sln.iml
+
+# =========================================================
+# .NET / ASP.NET Core
+# =========================================================
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.ilk
+*.meta
+*.iobj
+*.ipdb
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.assets.json
+artifacts/
+
+# Test Results
+TestResults/
+coverage/
+coverage.cobertura.xml
+*.coverage
+*.coveragexml
+*.trx
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# =========================================================
+# Entity Framework / Local DB
+# =========================================================
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# لو عندك migrations عايز ترفعها سيب السطر ده commented
+# Migrations/
+
+# =========================================================
+# Secrets / Environment Files
+# =========================================================
+.env
+.env.*
+!.env.example
+
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+secrets.json
+secrets/
+*.key
+*.pem
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+
+# Azure / AWS / GCP Credentials
+.azure/
+.aws/
+.gcloud/
+credentials.json
+service-account.json
+*-credentials.json
+
+# =========================================================
+# Logs
+# =========================================================
+logs/
+log/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================================================
+# Docker
+# =========================================================
+.docker/
+docker-data/
+docker-volumes/
+docker-compose.override.yml
+docker-compose.*.override.yml
+
+# لا تعمل ignore للملفات دي غالبا لأنها مهمة في المشروع
+!Dockerfile
+!docker-compose.yml
+!docker-compose.*.yml
+!.dockerignore
+
+# =========================================================
+# Nginx
+# =========================================================
+nginx/logs/
+nginx/cache/
+nginx/tmp/
+nginx/client_body_temp/
+nginx/proxy_temp/
+nginx/fastcgi_temp/
+nginx/uwsgi_temp/
+nginx/scgi_temp/
+
+*.pid
+
+# لو nginx config فيه secrets حطه local وسيبه ignored
+nginx/*.local.conf
+nginx/conf.d/*.local.conf
+
+# =========================================================
+# FFmpeg / Media Processing Outputs
+# =========================================================
+uploads/
+temp/
+tmp/
+processed/
+converted/
+transcoded/
+thumbnails/
+previews/
+media/output/
+media/temp/
+media/uploads/
+wwwroot/uploads/
+wwwroot/temp/
+wwwroot/thumbnails/
+wwwroot/processed/
+
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.flv
+*.wmv
+*.m4v
+
+*.mp3
+*.wav
+*.aac
+*.ogg
+*.m4a
+
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.bmp
+*.tiff
+
+# لو عندك صور ثابتة في المشروع وعايز ترفعها، حطها في folder مخصوص واعمل له exception
+!assets/
+!assets/**
+!public/
+!public/**
+!wwwroot/assets/
+!wwwroot/assets/**
+
+# =========================================================
+# Node / Angular / Next.js
+# =========================================================
+node_modules/
+dist/
+.angular/
+.next/
+out/
+build/
+.cache/
+.turbo/
+.vercel/
+.netlify/
+
+package-lock.json
+# لو عايز تثبت versions بدقة في team/company سيب package-lock.json مرفوع
+# الأفضل غالبا ترفعه، فلو حابب ارفعه امسح السطر اللي فوق
+
+yarn.lock
+pnpm-lock.yaml
+
+# =========================================================
+# Angular
+# =========================================================
+.angular/cache/
+coverage/
+dist/
+
+# =========================================================
+# Next.js
+# =========================================================
+.next/
+out/
+next-env.d.ts
+
+# =========================================================
+# TypeScript
+# =========================================================
+*.tsbuildinfo
+
+# =========================================================
+# Package Managers
+# =========================================================
+.pnpm-store/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# =========================================================
+# Database / Local Volumes
+# =========================================================
+data/
+db-data/
+postgres-data/
+mysql-data/
+mongo-data/
+redis-data/
+rabbitmq-data/
+elasticsearch-data/
+sqlserver-data/
+
+*.bak
+*.dump
+*.sql.gz
+
+# =========================================================
+# Message Brokers / Tools Data
+# =========================================================
+.kafka/
+.zookeeper/
+.rabbitmq/
+.redis/
+
+# =========================================================
+# Certificates / HTTPS Local Dev
+# =========================================================
+https/
+certs/
+ssl/
+*.localhost.pfx
+*.localhost.key
+*.localhost.crt
+
+# =========================================================
+# API Tools / Generated Clients
+# =========================================================
+swagger-generated/
+openapi-generated/
+generated/
+*.generated.cs
+*.generated.ts
+
+# لو generated code مهم في المشروع امسح السطور دي
+# generated/
+# *.generated.cs
+# *.generated.ts
+
+# =========================================================
+# Backup / Temporary Files
+# =========================================================
+*.bak
+*.backup
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+~$*
+
+# =========================================================
+# Reports
+# =========================================================
+reports/
+report/
+*.html
+*.xml
+*.json.tmp
+
+# =========================================================
+# Local Scripts Output
+# =========================================================
+scripts/output/
+scripts/temp/
+
+# =========================================================
+# Git / Patch Files
+# =========================================================
+*.patch
+*.diff
+
+# =========================================================
+# JetBrains / ReSharper
+# =========================================================
+_ReSharper*/
+*.DotSettings.user
+```
