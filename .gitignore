@@ -12,6 +12,12 @@ $RECYCLE.BIN/
 # =========================================================
 # IDEs / Editors
 # =========================================================
+# Visual Studio local files
+.vs/
+*.suo
+**/DocumentLayout.json
+**/DocumentLayout.backup.json
+
 .vs/
 .vscode/*
 !.vscode/settings.json
