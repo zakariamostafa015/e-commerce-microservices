@@ -1,12 +1,16 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using Catalog.Core.Entities;
+using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Catalog.Core.Entities
+namespace Catalog.Application.Responses
 {
-    public class Product : BaseEntity
+    public class ProductResponseDto
     {
+        [BsonId]
+        [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        public string Id { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
         public string? Summary { get; set; }
@@ -16,6 +20,5 @@ namespace Catalog.Core.Entities
         public decimal Price { get; set; }
         public ProductBrand? Brand { get; set; }
         public ProductType? Type { get; set; }
-
     }
 }
