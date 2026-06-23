@@ -56,5 +56,15 @@ namespace Catalog.Infrastructure.Repositories
         {
             return await _context.Types.Find(p => true).ToListAsync();
         }
+
+        public async Task<ProductBrand?> GetBrandById(string id)
+        {
+            return await _context.Brands.Find(p => p.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<ProductType?> GetTypeById(string id)
+        {
+            return await _context.Types.Find(p => p.Id == id).FirstOrDefaultAsync();
+        }
     }
 }
