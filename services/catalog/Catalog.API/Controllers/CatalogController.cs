@@ -1,6 +1,7 @@
 ﻿using Catalog.Application.Commands;
 using Catalog.Application.Queries;
 using Catalog.Application.Responses;
+using Catalog.Core.Specs;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -49,9 +50,9 @@ namespace Catalog.API.Controllers
         [HttpGet]
         [Route("GetAllProducts")]
         [ProducesResponseType(typeof(IList<ProductResponseDto>), StatusCodes.Status200OK)]
-        public async Task<ActionResult<IList<ProductResponseDto>>> GetAllProducts()
+        public async Task<ActionResult<IList<ProductResponseDto>>> GetAllProducts([FromQuery] CatalogSpecsParams catalogSpecsParams)
         {
-            var query = new GetAllProductsQuery();
+            var query = new GetAllProductsQuery(catalogSpecsParams);
             var results = await _mediator.Send(query);
             
             return Ok(results);
@@ -98,6 +99,28 @@ namespace Catalog.API.Controllers
                 return BadRequest("Product deletion failed.");
             }
             return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("GetAllBrands")]
+        [ProducesResponseType(typeof(IList<BrandResponseDto>), StatusCodes.Status200OK)]
+        public async Task<ActionResult<IList<BrandResponseDto>>> GetAllBrands()
+        {
+            var query = new GetAllBrandsQuery();
+            var results = await _mediator.Send(query);
+
+            return Ok(results);
+        }
+
+        [HttpGet]
+        [Route("GetAllProductTypes")]
+        [ProducesResponseType(typeof(IList<ProductTypeResponseDto>), StatusCodes.Status200OK)]
+        public async Task<ActionResult<IList<ProductTypeResponseDto>>> GetAllProductTypes()
+        {
+            var query = new GetAllProductTypesQuery();
+            var results = await _mediator.Send(query);
+
+            return Ok(results);
         }
     }
 }
